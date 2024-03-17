@@ -9,91 +9,59 @@
     tools:context=".HomeActivity">
 
     <RadioGroup
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp">
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
 
-        <TableLayout
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/birthday_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/wedding" />
+
+        <ImageView
+            android:id="@+id/wedding_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/cake" />
+
+        <RadioButton
+            android:id="@+id/birthday_btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
+            android:text="Birthday" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="1dp">
+        <RadioButton
+            android:id="@+id/wedding_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wedding" />
 
-                <ImageView
-                    android:id="@+id/birthday_img"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@mipmap/wedding" />
+        <ImageView
+            android:id="@+id/graduation_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/grad" />
 
-                <ImageView
-                    android:id="@+id/wedding_img"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@mipmap/cake" />
+        <ImageView
+            android:id="@+id/baby_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/baby" />
 
-            </TableRow>
+        <RadioButton
+            android:id="@+id/graduation_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graduation" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center">
-
-                <RadioButton
-                    android:id="@+id/birthday_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Birthday" />
-
-                <RadioButton
-                    android:id="@+id/wedding_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Wedding" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center">
-
-                <ImageView
-                    android:id="@+id/graduation_img"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@mipmap/grad" />
-
-                <ImageView
-                    android:id="@+id/baby_img"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:src="@mipmap/baby" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center">
-
-                <RadioButton
-                    android:id="@+id/graduation_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Graduation" />
-
-                <RadioButton
-                    android:id="@+id/baby_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Baby" />
-
-            </TableRow>
-        </TableLayout>
+        <RadioButton
+            android:id="@+id/baby_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baby" />
     </RadioGroup>
 
     <EditText
@@ -103,7 +71,7 @@
         android:layout_gravity="center"
         android:ems="10"
         android:inputType="text"
-        android:text="Person Name" />
+        android:hint="Person Name" />
 
     <Spinner
         android:id="@+id/card_size"

@@ -19,15 +19,15 @@ public class GenderActivity extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         String[] gender = {"boy", "girl"};
-        setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_gender, gender));
+        setListAdapter(new ArrayAdapter<String>(this, R.layout.list_item, gender));
     }
     public void onListItemClick(ListView lv, View v, int position, long id) {
         switch (position) {
             case 0:
-//                startActivity(new Intent(GenderActivity.this, BoyActivity.class));
+                startActivity(new Intent(GenderActivity.this, BoyActivity.class));
                 break;
             case 1:
-//                startActivity(new Intent(GenderActivity.this, GirlActivity.class));
+                startActivity(new Intent(GenderActivity.this, GirlActivity.class));
                 break;
         }
     }
