@@ -9,59 +9,75 @@
     tools:context=".HomeActivity">
 
     <RadioGroup
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:orientation="horizontal">
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center">
 
-        <ImageView
-            android:id="@+id/birthday_img"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@mipmap/wedding" />
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:columnCount="2">
 
-        <ImageView
-            android:id="@+id/wedding_img"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@mipmap/cake" />
+            <ImageView
+                android:id="@+id/birthday_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/wedding"
+                app:layout_gravity="center" />
 
-        <RadioButton
-            android:id="@+id/birthday_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Birthday" />
+            <ImageView
+                android:id="@+id/wedding_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/cake"
+                app:layout_gravity="center" />
 
-        <RadioButton
-            android:id="@+id/wedding_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Wedding" />
+            <RadioButton
+                android:id="@+id/birthday_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Birthday"
+                app:layout_gravity="center" />
 
-        <ImageView
-            android:id="@+id/graduation_img"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@mipmap/grad" />
+            <RadioButton
+                android:id="@+id/wedding_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wedding"
+                app:layout_gravity="center" />
 
-        <ImageView
-            android:id="@+id/baby_img"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@mipmap/baby" />
+            <ImageView
+                android:id="@+id/graduation_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/grad"
+                app:layout_gravity="center" />
 
-        <RadioButton
-            android:id="@+id/graduation_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Graduation" />
+            <ImageView
+                android:id="@+id/baby_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/baby"
+                app:layout_gravity="center" />
 
-        <RadioButton
-            android:id="@+id/baby_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Baby" />
+            <RadioButton
+                android:id="@+id/graduation_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Graduation"
+                app:layout_gravity="center" />
+
+            <RadioButton
+                android:id="@+id/baby_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baby"
+                app:layout_gravity="center" />
+        </androidx.gridlayout.widget.GridLayout>
     </RadioGroup>
 
     <EditText
