@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="0dp"
+    tools:context=".exam_input">
+
+    <Spinner
+        android:id="@+id/departmentSpinner"
+        android:layout_width="227dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="320dp"
+        android:entries="@array/department_array"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/header"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menuBtn"
+        android:layout_width="19dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="362dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/header_menu_3dots"
+        android:foreground="@drawable/header_menu_3dots"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/faculty_dashboard"
+        android:textSize="23sp"
+        android:fontFamily="@font/avenir_regular"
+        android:textColor="@color/white"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="29dp"/>
+
+    <!--here you add the name of the user after they login
+        ,(abbreviath with first names only)-->
+
+    <TextView
+        android:id="@+id/headerWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/avenir_black"
+        android:shadowColor="#EBE1E1"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="7"
+        android:text="@string/welcome"
+        android:textColor="@color/white"
+        android:textSize="49sp" />
+
+    <TextView
+        android:id="@+id/courseInfo"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="190dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/course_information"
+        android:textColor="#BBBBBB"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:layout_anchor="@+id/courseInfo"
+        app:layout_anchorGravity="top|center" />
+
+    <TextView
+        android:id="@+id/courseCode"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/course_code"
+        android:textColor="#00B9E6"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/codeInput"
+        android:layout_width="227dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="220dp"
+        android:hint="@string/course_code_hint"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/semester"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="270dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/level"
+        android:textColor="#00B9E6"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="320dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/department"
+        android:textColor="#00B9E6"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/levelSpinner"
+        android:layout_width="227dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="260dp"
+        android:entries="@array/level_array"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/testInfo"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="370dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/test_information"
+        android:textColor="#BBBBBB"
+        android:textSize="17sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/test_date"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="400dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/test_date"
+        android:textColor="#00B9E6"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/daySpinner"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="400dp"
+        android:entries="@array/day_array"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/monthSpinner"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="400dp"
+        android:entries="@array/month_array"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/test_time"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="455dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/test_time"
+        android:textColor="#00B9E6"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/timeSpinner"
+        android:layout_width="227dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="450dp"
+        android:entries="@array/time_array"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/exam_type"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="510dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/test_type"
+        android:textColor="#00B9E6"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/typeSpinner"
+        android:layout_width="227dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="500dp"
+        android:entries="@array/type_array"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/exam_duration"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="560dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/exam_duration"
+        android:textColor="#00B9E6"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/durationSpinner"
+        android:layout_width="227dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="550dp"
+        android:entries="@array/duration_array"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/exam_location"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="610dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/exam_location"
+        android:textColor="#00B9E6"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/locationSpinner"
+        android:layout_width="227dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="600dp"
+        android:entries="@array/location_array"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <CheckBox
+        android:id="@+id/confirmChk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="660dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/confirm_reservation"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/reserveBtn"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="265dp"
+        android:layout_marginTop="660dp"
+        android:background="@drawable/reserve"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/reserve"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

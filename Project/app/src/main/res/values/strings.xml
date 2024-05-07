@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Project</string>
+
+    <string name="welcome_message">Welcome \nthere,</string>
+    <string name="faculty_login">Faculty Login</string>
+    <string name="student_login">Student Login</string>
+    <string name="forgot_username">Forgot your username?</string>
+    <string name="cr_university">CR University</string>
+
+    <string name="username_recovery">Username Recovery</string>
+    <string name="user_id_hint">User ID</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <string name="faculty_dashboard">Faculty Dashboard</string>
+    <string name="welcome">Welcome\n</string>
+
+    <string name="student_dashboard">Student Dashboard</string>
+
+    <string name="my_schedule">My Schedule</string>
+
+    <string name="course_information">Course Information</string>
+    <string name="course_code">Course Code</string>
+    <string name="course_code_hint">(ex. SE447)</string>
+    <string name="level">Course Level</string>
+    <string name="department">Course Department</string>
+    <string name="test_information">Test Information</string>
+    <string name="test_date">Test Date (DD/MM)</string>
+    <string name="test_time">Test Time</string>
+    <string name="test_type">Test Type</string>
+    <string name="exam_duration">Exam Duration (In Minutes)</string>
+    <string name="exam_location">Exam Location</string>
+    <string name="confirm_reservation">Confirm Reservation</string>
+    <string name="reserve">Reserve</string>
+
+    <string-array name="level_array">
+        <item>Freshman</item>
+        <item>Sophomore</item>
+        <item>Junior</item>
+        <item>Senior</item>
+    </string-array>
+
+    <string-array name="department_array">
+        <item>Computer Science</item>
+        <item>Electrical Engineering</item>
+        <item>Business Studies</item>
+        <item>Communication Studies</item>
+        <item>Architectural Engineering</item>
+    </string-array>
+
+    <string-array name="day_array">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+
+    <string-array name="month_array">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="time_array">
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+    </string-array>
+
+    <string-array name="type_array">
+        <item>Quiz</item>
+        <item>Midterm</item>
+        <item>Final</item>
+    </string-array>
+
+    <string-array name="duration_array">
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+        <item>120</item>
+        <item>180</item>
+    </string-array>
+
+    <string-array name="location_array">
+        <item>Theatre</item>
+        <item>BG65</item>
+        <item>BG63</item>
+        <item>BG68</item>
+        <item>Double-floor</item>
+    </string-array>
+
+</resources>

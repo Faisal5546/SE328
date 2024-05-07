@@ -3,19 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_gallery">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.lab5.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" >
+        android:id="@+id/nav_account"
+        android:name="com.example.lab5.ui.gallery.AccountFragment"
+        android:label="@string/menu_account"
+        tools:layout="@layout/fragment_account" >
         <action
-            android:id="@+id/action_nav_home_to_nav_gallery"
+            android:id="@+id/action_nav_account_to_nav_gallery"
             app:destination="@id/nav_gallery" />
         <action
-            android:id="@+id/action_nav_home_to_nav_slideshow"
-            app:destination="@id/nav_slideshow" />
+            android:id="@+id/action_nav_account_to_nav_sign_out"
+            app:destination="@id/nav_sign_out" />
     </fragment>
 
     <fragment
@@ -24,17 +24,23 @@
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" >
         <action
-            android:id="@+id/action_nav_gallery_to_nav_home"
-            app:destination="@id/nav_home" />
+            android:id="@+id/action_nav_gallery_to_nav_account"
+            app:destination="@id/nav_account" />
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_sign_out"
+            app:destination="@id/nav_sign_out" />
     </fragment>
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.lab5.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" >
+        android:id="@+id/nav_sign_out"
+        android:name="com.example.lab5.ui.sign_out.Sign_Out_Fragment"
+        android:label="@string/menu_signout"
+        tools:layout="@layout/fragment_sign_out" >
         <action
-            android:id="@+id/action_nav_slideshow_to_nav_home"
-            app:destination="@id/nav_home" />
+            android:id="@+id/action_nav_sign_out_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+        <action
+            android:id="@+id/action_nav_sign_out_to_nav_account"
+            app:destination="@id/nav_account" />
     </fragment>
 </navigation>
