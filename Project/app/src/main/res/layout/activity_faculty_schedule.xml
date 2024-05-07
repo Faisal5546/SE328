@@ -26,12 +26,21 @@
         android:foreground="@drawable/header_menu_3dots"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="36dp"
+        android:background="@drawable/back"
+        android:foreground="@drawable/back2"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="18dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
+
     <TextView
         android:id="@+id/headerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
-        android:layout_marginLeft="29dp"
+        android:layout_marginLeft="65dp"
         android:fontFamily="@font/avenir_regular"
         android:text="@string/my_schedule"
         android:textColor="@color/white"
