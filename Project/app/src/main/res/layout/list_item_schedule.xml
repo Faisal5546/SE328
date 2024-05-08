@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Location -->
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/location_sign"
+        android:background="#00FFFFFF"
+        android:textStyle="italic"
+        android:clickable="false"
+        android:textSize="15sp"
+        android:text="Bg65"
+        android:textColor="#030303"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
+
+    <!-- Course Code -->
+    <TextView
+        android:id="@+id/courseCode"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="79dp"
+        android:fontFamily="@font/sf_pro"
+        android:text="SE322"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Faculty Name -->
+    <TextView
+        android:id="@+id/facultyName"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        android:fontFamily="@font/sf_pro"
+        android:textColor="#333333"
+        android:text="Eng. Saif"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Starting Time -->
+    <TextView
+        android:id="@+id/startingTime"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro"
+        android:textSize="17sp"
+        android:textColor="#BBBBBB"
+        android:textAlignment="center"
+        android:text="12:00"
+        android:textStyle="italic"
+        android:layout_marginTop="15.5dp"
+        android:layout_marginLeft="160dp"/>
+
+    <ImageView
+        android:id="@+id/indicatorImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bar_indicator"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="27dp"/>
+
+    <!-- Exam Type -->
+    <TextView
+        android:id="@+id/examType"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro"
+        android:text="Midterm"
+        android:textAlignment="center"
+        android:textColor="#030303"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="230dp"/>
+
+    <!-- Exam Date -->
+    <TextView
+        android:id="@+id/examDate"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro"
+        android:text="April 22"
+        android:textAlignment="center"
+        android:textColor="#00B9E6"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="230dp"/>
+
+    <!-- Ending Time -->
+    <TextView
+        android:id="@+id/endingTime"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro"
+        android:textSize="17sp"
+        android:textColor="#BBBBBB"
+        android:textAlignment="center"
+        android:text="12:00"
+        android:textStyle="italic"
+        android:layout_marginTop="15.5dp"
+        android:layout_marginLeft="307dp"/>
+
+    <!-- Update Button -->
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:alpha="0.0"/>
+
+</RelativeLayout>
