@@ -23,6 +23,7 @@
         android:layout_marginTop="27dp"
         android:background="@drawable/header_menu_3dots"
         android:foreground="@drawable/header_menu_3dots"
+        android:onClick="openOptionsMenu"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
@@ -61,37 +62,6 @@
         android:layout_marginTop="330dp"
         android:background="@drawable/my_schedule"
         android:foreground="@drawable/my_schedule"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/bottomAppBar"
-        android:layout_gravity="bottom"
-        android:background="@color/white"
-        app:fabCradleMargin="10dp"
-        app:fabCradleRoundedCornerRadius="30dp">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30dp"
-            android:background="@android:color/transparent"
-            app:labelVisibilityMode="labeled"
-            app:elevation="0dp"
-            app:menu="@menu/bottom_menu" />
-
-    </com.google.android.material.bottomappbar.BottomAppBar>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:src="@drawable/baseline_add_24"
-        app:layout_anchor="@id/bottomAppBar"
-        app:maxImageSize="40dp"
-        app:tint="@color/lavender"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
