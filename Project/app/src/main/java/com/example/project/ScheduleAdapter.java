@@ -13,7 +13,6 @@ import androidx.annotation.Nullable;
 
 import java.util.List;
 
-
 public class ScheduleAdapter extends ArrayAdapter<ScheduleItem> {
     private Context mContext;
     private int mResource;
