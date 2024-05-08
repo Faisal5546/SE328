@@ -36,10 +36,10 @@ public class MainActivity2 extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.homeMenuItem) {
-            startActivity(new Intent(faculty_schedule.this, MainActivity.class));
+            startActivity(new Intent(MainActivity2.this, MainActivity2.class));
             return true;
         } else if (id == R.id.myScheduleMenuItem) {
-            startActivity(new Intent(faculty_schedule.this, faculty_schedule.class));
+            startActivity(new Intent(MainActivity2.this, faculty_schedule.class));
             return true;
         }
         return super.onOptionsItemSelected(item);

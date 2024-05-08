@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
 
 public class student_schedule extends AppCompatActivity {
 
@@ -25,10 +27,10 @@ public class student_schedule extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.homeMenuItem) {
-            startActivity(new Intent(faculty_schedule.this, MainActivity.class));
+            startActivity(new Intent(student_schedule.this, MainActivity2.class));
             return true;
         } else if (id == R.id.myScheduleMenuItem) {
-            startActivity(new Intent(faculty_schedule.this, faculty_schedule.class));
+            startActivity(new Intent(student_schedule.this, student_schedule.class));
             return true;
         }
         return super.onOptionsItemSelected(item);

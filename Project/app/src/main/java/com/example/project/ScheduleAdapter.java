@@ -40,7 +40,7 @@ public class ScheduleAdapter extends ArrayAdapter<ScheduleItem> {
         TextView facultyNameTextView = convertView.findViewById(R.id.facultyName);
         TextView startingTimeTextView = convertView.findViewById(R.id.startingTime);
         TextView examTypeTextView = convertView.findViewById(R.id.exam_type);
-        TextView examDateTextView = convertView.findViewById(R.id.exam_date);
+        TextView examDateTextView = convertView.findViewById(R.id.examDate);
         TextView endingTimeTextView = convertView.findViewById(R.id.endingTime);
         Button updateButton = convertView.findViewById(R.id.updateButton);
 
