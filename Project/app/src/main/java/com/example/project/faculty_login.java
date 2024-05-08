@@ -3,6 +3,7 @@ package com.example.project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -11,6 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Objects;
 
 public class faculty_login extends AppCompatActivity {
 
@@ -68,7 +72,25 @@ public class faculty_login extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(faculty_login.this, MainActivity.class));
+                DatabaseHelper myDB = new DatabaseHelper(faculty_login.this, "University.db", null, 1);
+                String username = userEditText.getText().toString();
+                String password = passEditText.getText().toString();
+                Cursor cur = myDB.ViewUser(username);
+                if (cur.getCount() == 0) {
+                    Toast.makeText(faculty_login.this, "Account not found. Please create an account.", Toast.LENGTH_LONG).show();
+                } else {
+                    cur.moveToNext();
+                    String dbType = cur.getString(1);
+                    String dbPass = cur.getString(2);
+                    if (Objects.equals(dbPass, password) && Objects.equals(dbType, "Student")) {
+                        Toast.makeText(faculty_login.this, "Please Log in Through Student Log in Page", Toast.LENGTH_LONG).show();
+                    }
+                    else if (Objects.equals(dbPass, password) && Objects.equals(dbType, "Faculty")) {
+                        startActivity(new Intent(faculty_login.this, MainActivity.class));
+                    } else {
+                        Toast.makeText(faculty_login.this, "Incorrect Password. Please try again.", Toast.LENGTH_LONG).show();
+                    }
+                }
             }
         });
 

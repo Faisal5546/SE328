@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class forgot_username extends AppCompatActivity {
 
@@ -58,5 +59,23 @@ public class forgot_username extends AppCompatActivity {
         };
 
         userIdEditText.addTextChangedListener(textWatcher);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Handle login button click
+                if (userIdEditText.getText().toString().isEmpty()) {
+                    Toast.makeText(forgot_username.this ,"Please enter your user id", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                int ID = Integer.parseInt(userIdEditText.getText().toString());
+                DatabaseHelper myDB = new DatabaseHelper(forgot_username.this, "University.db", null, 1);
+                if (myDB.ViewUser(ID).getCount() > 0) {
+                    myDB.ViewUser(ID).moveToNext();
+                    Toast.makeText(forgot_username.this, "Your user name is: " + myDB.ViewUser(ID).getString(0), Toast.LENGTH_LONG).show();
+                } else {
+                    Toast.makeText(forgot_username.this, "ID Not Found.", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 }

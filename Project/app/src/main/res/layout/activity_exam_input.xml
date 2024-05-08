@@ -218,32 +218,11 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/exam_duration"
-        android:layout_width="105dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="560dp"
-        android:fontFamily="@font/sf_pro"
-        android:text="@string/exam_duration"
-        android:textColor="#00B9E6"
-        android:textSize="15sp"
-        android:textStyle="italic" />
-
-    <Spinner
-        android:id="@+id/durationSpinner"
-        android:layout_width="227dp"
-        android:layout_height="45dp"
-        android:layout_marginLeft="143dp"
-        android:layout_marginTop="550dp"
-        android:entries="@array/duration_array"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
         android:id="@+id/exam_location"
         android:layout_width="105dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="36dp"
-        android:layout_marginTop="610dp"
+        android:layout_marginTop="560dp"
         android:fontFamily="@font/sf_pro"
         android:text="@string/exam_location"
         android:textColor="#00B9E6"
@@ -255,7 +234,7 @@
         android:layout_width="227dp"
         android:layout_height="45dp"
         android:layout_marginLeft="143dp"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="550dp"
         android:entries="@array/location_array"
         tools:ignore="TouchTargetSizeCheck" />
 
