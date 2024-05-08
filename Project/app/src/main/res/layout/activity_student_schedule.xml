@@ -24,9 +24,11 @@
         android:layout_marginTop="27dp"
         android:background="@drawable/header_menu_3dots"
         android:foreground="@drawable/header_menu_3dots"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
+        android:onClick="openOptionsMenu"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
+        android:id="@+id/back"
         android:layout_width="45dp"
         android:layout_height="36dp"
         android:background="@drawable/back"
