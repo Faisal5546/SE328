@@ -64,4 +64,3 @@ public class ScheduleAdapter extends ArrayAdapter<ScheduleItem> {
         return convertView;
     }
 }
-

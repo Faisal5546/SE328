@@ -91,6 +91,7 @@
         app:layout_anchor="@+id/courseInfo"
         app:layout_anchorGravity="top|center" />
 
+    <!--here check-->
     <TextView
         android:id="@+id/courseCode"
         android:layout_width="89dp"
@@ -103,6 +104,7 @@
         android:textSize="15sp"
         android:textStyle="italic" />
 
+
     <EditText
         android:id="@+id/codeInput"
         android:layout_width="227dp"
@@ -110,7 +112,7 @@
         android:layout_marginLeft="143dp"
         android:layout_marginTop="220dp"
         android:hint="@string/course_code_hint"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"/>
 
     <TextView
         android:id="@+id/semester"
