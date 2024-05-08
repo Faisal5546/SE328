@@ -104,7 +104,6 @@
         android:textSize="15sp"
         android:textStyle="italic" />
 
-
     <EditText
         android:id="@+id/codeInput"
         android:layout_width="227dp"
