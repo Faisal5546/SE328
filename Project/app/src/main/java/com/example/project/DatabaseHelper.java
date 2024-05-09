@@ -29,7 +29,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String USERS_TYPE = "Type";
     public static final String USERS_ID = "ID";
 
-    public static final String REGISTRATIONS = "Students";
+    public static final String REGISTRATIONS = "Registrations";
     public static final String NAME = "Name";
     public static final String COURSE = "Course";
     public static final String DEPARTMENT = "Department";

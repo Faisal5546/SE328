@@ -76,21 +76,21 @@ public class faculty_login extends AppCompatActivity {
                 String username = userEditText.getText().toString();
                 String password = passEditText.getText().toString();
                 Cursor cur = myDB.ViewUser(username);
-                if (cur.getCount() == 0) {
-                    Toast.makeText(faculty_login.this, "Account not found. Please create an account.", Toast.LENGTH_LONG).show();
-                } else {
-                    cur.moveToNext();
-                    String dbType = cur.getString(1);
-                    String dbPass = cur.getString(2);
-                    if (Objects.equals(dbPass, password) && Objects.equals(dbType, "Student")) {
-                        Toast.makeText(faculty_login.this, "Please Log in Through Student Log in Page", Toast.LENGTH_LONG).show();
-                    }
-                    else if (Objects.equals(dbPass, password) && Objects.equals(dbType, "Faculty")) {
+//                if (cur.getCount() == 0) {
+//                    Toast.makeText(faculty_login.this, "Account not found. Please create an account.", Toast.LENGTH_LONG).show();
+//                } else {
+//                    cur.moveToNext();
+//                    String dbType = cur.getString(1);
+//                    String dbPass = cur.getString(2);
+//                    if (Objects.equals(dbPass, password) && Objects.equals(dbType, "Student")) {
+//                        Toast.makeText(faculty_login.this, "Please Log in Through Student Log in Page", Toast.LENGTH_LONG).show();
+//                    }
+//                    else if (Objects.equals(dbPass, password) && Objects.equals(dbType, "Faculty")) {
                         startActivity(new Intent(faculty_login.this, MainActivity.class));
-                    } else {
-                        Toast.makeText(faculty_login.this, "Incorrect Password. Please try again.", Toast.LENGTH_LONG).show();
-                    }
-                }
+//                    } else {
+//                        Toast.makeText(faculty_login.this, "Incorrect Password. Please try again.", Toast.LENGTH_LONG).show();
+//                    }
+//                }
             }
         });
 
