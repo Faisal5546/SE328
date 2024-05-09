@@ -55,7 +55,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                         COURSES_DEPARTMENT + " TEXT NOT NULL" + ");"
         );
 
-
         sqLiteDatabase.execSQL(
                 "CREATE TABLE " + USERS + "(" +
                         USERS_NAME + " TEXT NOT NULL," +
