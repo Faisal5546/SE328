@@ -13,8 +13,9 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="284dp"
+        android:scaleType="fitXY"
         android:src="@drawable/header"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/menuBtn"
@@ -24,7 +25,6 @@
         android:layout_marginTop="27dp"
         android:background="@drawable/header_menu_3dots"
         android:foreground="@drawable/header_menu_3dots"
-        android:onClick="openOptionsMenu"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <Button
@@ -37,6 +37,7 @@
         android:layout_marginLeft="18dp"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
 
+
     <TextView
         android:id="@+id/headerText"
         android:layout_width="wrap_content"
@@ -48,8 +49,9 @@
         android:textColor="@color/white"
         android:textSize="23sp"/>
 
-    <!--here you concatenate the name of the user after they login
-    ,(first names only)-->
+    <!--here you add the name of the user after they login
+        ,(abbreviation with first names only)-->
+
     <TextView
         android:id="@+id/headerWelcome"
         android:layout_width="wrap_content"

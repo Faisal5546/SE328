@@ -9,8 +9,8 @@ import android.widget.Button;
 
 public class login extends AppCompatActivity {
 
-    Button faBtn;
-    Button stBtn;
+    Button signup;
+    Button login;
     Button forgotUsernameButton;
 
     @Override
@@ -18,21 +18,21 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Button faBtn = (Button) findViewById(R.id.facultyLogin);
-        Button stBtn = (Button) findViewById(R.id.studentLogin);
+        signup = (Button) findViewById(R.id.signupBtn);
+        login = (Button) findViewById(R.id.loginBtn);
         forgotUsernameButton = findViewById(R.id.forgotUsername);
 
-        faBtn.setOnClickListener(new View.OnClickListener() {
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(login.this,faculty_login.class));
+                startActivity(new Intent(login.this,signup.class));
             }
         });
 
-        stBtn.setOnClickListener(new View.OnClickListener() {
+       login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(login.this, student_login.class));
+                startActivity(new Intent(login.this, login_one.class));
             }
         });
 

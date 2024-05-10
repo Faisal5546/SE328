@@ -24,7 +24,6 @@
         android:layout_marginTop="27dp"
         android:background="@drawable/header_menu_3dots"
         android:foreground="@drawable/header_menu_3dots"
-        android:onClick="openOptionsMenu"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 

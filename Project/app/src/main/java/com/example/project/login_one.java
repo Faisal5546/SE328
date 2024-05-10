@@ -2,33 +2,31 @@ package com.example.project;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
-
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.Spinner;
 
-import java.util.Objects;
+import com.google.android.material.textfield.TextInputEditText;
 
-public class student_login extends AppCompatActivity {
+public class login_one extends AppCompatActivity {
 
-    private EditText userEditText;
-    private EditText passEditText;
-    private Button loginButton;
+    TextInputEditText userEditText;
+    TextInputEditText passEditText;
 
+    Button loginButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_login);
+        setContentView(R.layout.activity_login_one);
 
-        userEditText = findViewById(R.id.user);
-        passEditText = findViewById(R.id.pass);
+
+        userEditText = findViewById(R.id.userName);
+        passEditText = findViewById(R.id.userPass);
         loginButton = findViewById(R.id.login);
 
         ImageView backImage = findViewById(R.id.back);
@@ -68,30 +66,5 @@ public class student_login extends AppCompatActivity {
 
         userEditText.addTextChangedListener(textWatcher);
         passEditText.addTextChangedListener(textWatcher);
-
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                DatabaseHelper myDB = new DatabaseHelper(student_login.this, "University.db", null, 1);
-                String username = userEditText.getText().toString();
-                String password = passEditText.getText().toString();
-                Cursor cur = myDB.ViewUser(username);
-//                if (cur.getCount() == 0) {
-//                    Toast.makeText(student_login.this, "Account not found. Please create an account.", Toast.LENGTH_LONG).show();
-//                } else {
-//                    cur.moveToNext();
-//                    String dbType = cur.getString(1);
-//                    String dbPass = cur.getString(2);
-//                    if (Objects.equals(dbPass, password) && Objects.equals(dbType, "Faculty")) {
-//                        Toast.makeText(student_login.this, "Please Log in Through Faculty Log in Page", Toast.LENGTH_LONG).show();
-//                    }
-//                    else if (Objects.equals(dbPass, password) && Objects.equals(dbType, "Student")) {
-                        startActivity(new Intent(student_login.this, MainActivity2.class));
-//                    } else {
-//                        Toast.makeText(student_login.this, "Incorrect Password. Please try again.", Toast.LENGTH_LONG).show();
-//                    }
-//                }
-            }
-        });
     }
 }

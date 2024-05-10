@@ -36,11 +36,11 @@
         app:layout_constraintVertical_bias="0.518" />
 
     <Button
-        android:id="@+id/facultyLogin"
+        android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button2"
-        android:foreground="@drawable/button2"
+        android:background="@drawable/login"
+        android:foreground="@drawable/login"
         android:textAlignment="center"
         app:flow_horizontalAlign="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,11 +51,11 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/studentLogin"
+        android:id="@+id/signupBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:foreground="@drawable/button"
+        android:background="@drawable/signup"
+        android:foreground="@drawable/signup"
         android:textAlignment="center"
         app:flow_horizontalAlign="center"
         app:layout_constraintBottom_toBottomOf="parent"

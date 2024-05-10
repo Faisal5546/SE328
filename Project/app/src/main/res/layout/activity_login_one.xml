@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".faculty_login">
+    tools:context=".login_one">
 
     <ImageView
         android:id="@+id/back"
@@ -23,7 +23,7 @@
         android:layout_width="244dp"
         android:layout_height="51dp"
         android:fontFamily="@font/avenir_black"
-        android:text="@string/student_login"
+        android:text="@string/login"
         android:textColor="#333333"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,33 +33,45 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.03" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/user"
         android:layout_width="306.52dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:fontFamily="@font/sf_pro"
         android:inputType="text"
-        android:hint="@string/username"
+        android:hint="Username"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.463" />
+        app:layout_constraintVertical_bias="0.463">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/pass"
-        android:textSize="12sp"
         android:layout_width="306.52dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:inputType="textPassword"
-        android:hint="@string/password"
+        android:hint="Password"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546" />
+        app:layout_constraintVertical_bias="0.556">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/login"
@@ -71,22 +83,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654"
+        app:layout_constraintVertical_bias="0.664"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <TextView
-        android:id="@+id/universityName"
-        android:layout_width="103dp"
-        android:layout_height="25dp"
-        android:fontFamily="@font/avenir_black"
-        android:text="@string/cr_university"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.985" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

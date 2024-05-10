@@ -13,8 +13,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.PopupMenu;
+
 
 public class exam_input extends AppCompatActivity {
 
@@ -22,6 +26,19 @@ public class exam_input extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exam_input);
+
+        Button menuBtn = (Button) findViewById(R.id.menuBtn);
+
+        Button backImage = findViewById(R.id.back);
+
+        backImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Finish the current activity to go back to the previous activity
+                finish();
+            }
+        });
+/*
         EditText code = findViewById(R.id.codeInput);
         Spinner level = findViewById(R.id.levelSpinner);
         Spinner department = findViewById(R.id.departmentSpinner);
@@ -61,28 +78,45 @@ public class exam_input extends AppCompatActivity {
                 }
             }
         });
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+ */
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.homeMenuItem) {
-            startActivity(new Intent(exam_input.this, MainActivity.class));
-            return true;
-        } else if (id == R.id.myScheduleMenuItem) {
-            startActivity(new Intent(exam_input.this, faculty_schedule.class));
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+        menuBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create a PopupMenu
+                PopupMenu popupMenu = new PopupMenu(exam_input.this, v);
 
-    public void openOptionsMenu(View view) {
-        openOptionsMenu();
+                // Inflate the menu from menu resource file
+                popupMenu.getMenuInflater().inflate(R.menu.menu_main, popupMenu.getMenu());
+
+                // Set a listener for menu item clicks
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        // Check the IDs of menu items, switch didn't work for some reason :(
+                        if (item.getItemId() == R.id.homeMenuItem) {
+                            startActivity(new Intent(exam_input.this, MainActivity.class));
+                            return true;
+                        } else if (item.getItemId() == R.id.myScheduleMenuItem) {
+                            startActivity(new Intent(exam_input.this, faculty_schedule.class));
+                            return true;
+                        }
+                        else if (item.getItemId() == R.id.addTestMenuItem) {
+                            startActivity(new Intent(exam_input.this, exam_input.class));
+                            return true;
+                        }
+                        else if (item.getItemId() == R.id.addCourseMenuItem) {
+                            startActivity(new Intent(exam_input.this, course_input.class));
+                            return true;
+                        }
+                        return false;
+                    }
+                });
+
+                // Show the PopupMenu
+                popupMenu.show();
+            }
+        });
     }
 }

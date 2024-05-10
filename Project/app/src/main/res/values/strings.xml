@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Project</string>
+    <string name="app_name">CR University</string>
 
     <string name="welcome_message">Welcome \nthere,</string>
-    <string name="faculty_login">Faculty Login</string>
-    <string name="student_login">Student Login</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
     <string name="forgot_username">Forgot your username?</string>
     <string name="cr_university">CR University</string>
 
@@ -20,6 +20,10 @@
 
     <string name="my_schedule">My Schedule</string>
 
+    <string name="add_course">Add Course</string>
+    <string name="add_test">Add Test</string>
+
+
     <string name="course_information">Course Information</string>
     <string name="course_code">Course Code</string>
     <string name="course_code_hint">(ex. SE447)</string>
@@ -33,6 +37,15 @@
     <string name="exam_location">Exam Location</string>
     <string name="confirm_reservation">Confirm Reservation</string>
     <string name="reserve">Reserve</string>
+
+    <string name="department_information">Department Information</string>
+    <string name="course_department_hint">(ex. SE)</string>
+
+
+    <string-array name="user_type">
+        <item>Student</item>
+        <item>Faculty</item>
+    </string-array>
 
     <string-array name="level_array">
         <item>Freshman</item>
@@ -133,4 +146,10 @@
         <item>Double-floor</item>
     </string-array>
 
-</resources>
+    <!-- Faisal - inflate courses from db here -->
+    <string-array name="courses_array">
+        <item>item 1</item>
+        <item>item 1</item>
+    </string-array>
+
+    </resources>

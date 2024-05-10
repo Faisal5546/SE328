@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".faculty_login">
+    tools:context=".signup">
 
     <ImageView
         android:id="@+id/back"
@@ -23,7 +23,7 @@
         android:layout_width="244dp"
         android:layout_height="51dp"
         android:fontFamily="@font/avenir_black"
-        android:text="@string/faculty_login"
+        android:text="@string/signup"
         android:textColor="#333333"
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,25 +33,52 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.03" />
 
-    <EditText
-        android:id="@+id/user"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/id"
         android:layout_width="306.52dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:fontFamily="@font/sf_pro"
         android:inputType="text"
-        android:hint="@string/username"
+        android:hint="@string/user_id_hint"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.463" />
+        app:layout_constraintVertical_bias="0.443">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/user"
+        android:layout_width="306.52dp"
+        android:layout_height="60dp"
+        android:inputType="text"
+        android:hint="@string/username"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.533">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:id="@+id/pass"
         android:layout_width="306.52dp"
-        android:layout_height="50dp"
-        android:inputType="textPassword"
+        android:layout_height="60dp"
         android:hint="@string/password"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,19 +86,38 @@
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546" />
+        app:layout_constraintVertical_bias="0.623">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPass"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/userType"
+        android:layout_width="306.52dp"
+        android:layout_height="50dp"
+        android:textSize="12sp"
+        android:entries="@array/user_type"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.713" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/signup"
         android:layout_width="307.52dp"
         android:layout_height="52dp"
-        android:background="@drawable/button___inactive"
-        android:foreground="@drawable/button___inactive"
+        android:background="@drawable/signup___inactive"
+        android:foreground="@drawable/signup___inactive"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654"
+        app:layout_constraintVertical_bias="0.800"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView

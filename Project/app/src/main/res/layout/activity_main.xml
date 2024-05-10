@@ -23,7 +23,6 @@
         android:layout_marginTop="27dp"
         android:background="@drawable/header_menu_3dots"
         android:foreground="@drawable/header_menu_3dots"
-        android:onClick="openOptionsMenu"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <TextView
@@ -72,6 +71,16 @@
         android:layout_marginTop="330dp"
         android:background="@drawable/my_schedule"
         android:foreground="@drawable/my_schedule"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/addCourse"
+        android:layout_width="142dp"
+        android:layout_height="149dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="519dp"
+        android:background="@drawable/add_course"
+        android:foreground="@drawable/add_course"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

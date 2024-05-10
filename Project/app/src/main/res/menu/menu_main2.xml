@@ -4,12 +4,6 @@
         android:id="@+id/homeMenuItem"
         android:title="Home"/>
     <item
-        android:id="@+id/addTestMenuItem"
-        android:title="Add a test"/>
-    <item
-        android:id="@+id/addCourseMenuItem"
-        android:title="Add a course"/>
-    <item
         android:id="@+id/myScheduleMenuItem"
         android:title="My Schedule"/>
 </menu>

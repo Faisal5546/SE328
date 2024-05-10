@@ -12,8 +12,9 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="284dp"
+        android:scaleType="fitXY"
         android:src="@drawable/header"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/menuBtn"
@@ -23,22 +24,33 @@
         android:layout_marginTop="27dp"
         android:background="@drawable/header_menu_3dots"
         android:foreground="@drawable/header_menu_3dots"
-        android:onClick="openOptionsMenu"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="45dp"
+        android:layout_height="36dp"
+        android:background="@drawable/back"
+        android:foreground="@drawable/back2"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="18dp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
+
 
     <TextView
         android:id="@+id/headerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/student_dashboard"
-        android:textSize="23sp"
-        android:fontFamily="@font/avenir_regular"
-        android:textColor="@color/white"
         android:layout_marginTop="27dp"
-        android:layout_marginLeft="29dp"/>
+        android:layout_marginLeft="65dp"
+        android:fontFamily="@font/avenir_regular"
+        android:text="@string/student_dashboard"
+        android:textColor="@color/white"
+        android:textSize="23sp"/>
 
     <!--here you add the name of the user after they login
-        ,(first names only)-->
+        ,(abbreviation with first names only)-->
+
     <TextView
         android:id="@+id/headerWelcome"
         android:layout_width="wrap_content"
