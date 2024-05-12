@@ -25,14 +25,14 @@ public class login extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(login.this,signup.class));
+                startActivity(new Intent(login.this,student_schedule.class));
             }
         });
 
        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(login.this, login_one.class));
+                startActivity(new Intent(login.this, MainActivity.class));
             }
         });
 

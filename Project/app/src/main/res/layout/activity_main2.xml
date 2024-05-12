@@ -68,12 +68,21 @@
 
     <Button
         android:id="@+id/mySchedule"
-        android:layout_width="142dp"
-        android:layout_height="149dp"
-        android:layout_marginLeft="46dp"
+        android:layout_width="170dp"
+        android:layout_height="190dp"
+        android:background="@drawable/dash_button_background"
+        android:drawableTop="@mipmap/dash_button3_foreground"
+        android:layout_marginLeft="26dp"
         android:layout_marginTop="330dp"
-        android:background="@drawable/my_schedule"
-        android:foreground="@drawable/my_schedule"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/my_schedule"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:elevation="0dp"
     tools:context=".MainActivity">
 
     <ImageView
@@ -13,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="284dp"
         android:src="@drawable/header"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/menuBtn"
@@ -55,32 +54,59 @@
 
     <Button
         android:id="@+id/addTest"
-        android:layout_width="142dp"
-        android:layout_height="149dp"
-        android:layout_marginLeft="46dp"
+        android:layout_width="170dp"
+        android:layout_height="190dp"
+        android:background="@drawable/dash_button_background"
+        android:drawableTop="@mipmap/dash_button_foreground"
+        android:layout_marginLeft="26dp"
         android:layout_marginTop="330dp"
-        android:background="@drawable/add_test"
-        android:foreground="@drawable/add_test"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/add_test"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/mySchedule"
-        android:layout_width="142dp"
-        android:layout_height="149dp"
-        android:layout_marginLeft="228dp"
+        android:layout_width="170dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="210dp"
         android:layout_marginTop="330dp"
-        android:background="@drawable/my_schedule"
-        android:foreground="@drawable/my_schedule"
+        android:background="@drawable/dash_button_background"
+        android:drawableTop="@mipmap/dash_button2_foreground"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:fontFamily="@font/sf_pro"
+        android:text="@string/my_schedule"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/addCourse"
-        android:layout_width="142dp"
-        android:layout_height="149dp"
-        android:layout_marginLeft="46dp"
-        android:layout_marginTop="519dp"
-        android:background="@drawable/add_course"
-        android:foreground="@drawable/add_course"
+        android:layout_width="170dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="539dp"
+        android:text="@string/add_course"
+        android:textAllCaps="false"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:fontFamily="@font/sf_pro"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/dash_button_background"
+        android:drawableTop="@mipmap/dash_button3_foreground"
         tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

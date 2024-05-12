@@ -39,31 +39,16 @@
         android:id="@+id/loginBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/login"
-        android:foreground="@drawable/login"
+        android:background="@drawable/start_button_background_9"
         android:textAlignment="center"
+        android:text="@string/start"
         app:flow_horizontalAlign="center"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/signupBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/signup"
-        android:foreground="@drawable/signup"
-        android:textAlignment="center"
-        app:flow_horizontalAlign="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.855"
-        android:layout_marginBottom="5dp"
+        app:layout_constraintVertical_bias="0.840"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
